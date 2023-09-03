@@ -26,6 +26,12 @@ Handout files created using [Quarto](https://quarto.org/).
   - Data file: [`cdc_data.csv`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/000-logistics/cdc_data.csv) | To download, see `theSpring` module
   - Stata do-file: [`000-stats-refresher.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/000-logistics/000-stats-refresher.do) | To download, see `theSpring` module
 
+**Week 2: Simple Linear Regression**
+ 
+  - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/001-simple-regression/simple-regression.pdf)
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/001-simple-regression/001-simple-regression.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/001-simple-regression/001-simple-regression.pdf)
+  - Stata do-file: [`001-simple-regression.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/001-simple-regression/001-simple-regression.do) | To download, see `theSpring` module
+    - Data files available for download on `theSpring`.
 
 
 
