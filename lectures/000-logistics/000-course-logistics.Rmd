@@ -2,7 +2,7 @@
 title: ".b[Course Logistics]"
 subtitle: ".b[.green[EC 339]]"
 author: "Marcio Santetti"
-date: "Spring 2023"
+date: "Fall 2023"
 output:
   xaringan::moon_reader:
     css: ['default', 'metropolis', 'metropolis-fonts', 'skid-css.css']
