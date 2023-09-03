@@ -25,3 +25,32 @@ Handout files created using [Quarto](https://quarto.org/).
   - [`Video lecture`](https://youtu.be/BRwqm6RdL0I)
   - Data file: [`cdc_data.csv`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/000-logistics/cdc_data.csv) | To download, see `theSpring` module
   - Stata do-file: [`000-stats-refresher.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/000-logistics/000-stats-refresher.do) | To download, see `theSpring` module
+
+
+
+
+## Assignments
+
+
+### Problem Sets
+
+
+  - `Problem Set 1` (coming soon)
+
+
+### Quizzes
+
+All quizzes will be posted on `theSpring`.
+
+
+
+### Applied Research Project
+
+ Students must submit their Applied Research Projects until the **Final Exam day**. 
+
+  - [`Project Template`](https://raw.githack.com/marciosantetti/ec339-fall23/main/research-project/research-proj-template.pdf)
+  - [`Handout`](https://raw.githack.com/marciosantetti/ec339-fall23/main/research-project/research-proj-handout.pdf)
+  
+ Projects from previous semesters are posted on `theSpring`.
+ 
+
