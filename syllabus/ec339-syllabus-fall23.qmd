@@ -72,7 +72,7 @@ At the completion of the course, you will be able to:
 
 This course has one **required** textbook:
 
-* A. H. Studenmund, *Using Econometrics: A practical guide*, 6th edition, Pearson, 2011.
+* A. H. Studenmund, *Using Econometrics: A practical guide*, 7th edition, Pearson, 2017.
 
 The most affordable option is its `eTextbook` version, available at the [`Pearson website`](https://www.pearson.com/en-us/subject-catalog/p/using-econometrics-a-practical-guide/P200000006422/9780137506323). In case students prefer other formats, this link also contains different options.
 
