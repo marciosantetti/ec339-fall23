@@ -55,6 +55,8 @@ Lectures will be taught in the lab. However, you are welcome (and encouraged) to
 
 Lecture notes and problem sets will be posted on the [`Course website`](https://github.com/marciosantetti/ec339-fall23/blob/main/README.md). Students are strongly recommended to bookmark this page, as it will be constantly updated throughout the semester. Additional readings, quizzes, answer keys, and data files will be uploaded to `theSpring`. Students will also use `theSpring` to submit all assignments.
 
+\newpage
+
 # Outcomes
 
 At the completion of the course, you will be able to:
@@ -101,7 +103,6 @@ While the course structure is strongly inspired by this textbook, a more diverse
 
 - **Applied Research Project** (30\%): The idea of the applied project is to provide a *hands-on* experience for students, in which they are responsible for formulating a research question, looking for the data (cross-section or time-series), and performing the appropriate econometric treatments and techniques, so, by the end of it, that question can be answered. The project must be between 8 and 10 pages, double-spaced, with the required econometric outputs and bibliography (these last two do not count for the paper's length). All necessary assistance will be provided by the instructor upon students' request. Moreover, students will have access to a template, as well as several projects shared by students from previous semesters, serving as useful references. Feel free to work either in pairs or individually. You must submit your project until the Final Exam day's starting time.
 
-\newpage
 
 Attendance and late policies:
   
@@ -139,6 +140,7 @@ Unsatisfactory performance                      F (0--60\%)
 * **Dec 8**: Last day of classes
 * **Dec 15**: Final exam, our classroom (9:00 AM--12:00 PM)
 
+\newpage
 
 # Class Policies
 
@@ -154,7 +156,6 @@ You can expect me to:
 
 * Ignore emails/requests asking for any change in grades by the end of the semester.
 
-\newpage
 
 I expect students to:
 
@@ -188,7 +189,7 @@ An effective learning experience depends upon the ability of members of the acad
 In all academic work, the ideas and contributions of others must be appropriately acknowledged and work that is presented as original must be, in fact, original. Using an AI-content generator (such as `ChatGPT`) to complete coursework without proper attribution or authorization is a form of academic dishonesty. If you are unsure about whether something may be plagiarism or academic dishonesty, please contact the instructor to discuss the issue. 
 
 
-\newpage
+
 
 # Tentative Course Schedule
 
