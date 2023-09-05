@@ -34,7 +34,7 @@ format:
 	\textbf{Who:} & \, \faMortarBoard \,  Marcio Santetti, Ph.D. (\textit{he/him}) & \, \faEnvelopeO \, \href{mailto:msantetti@skidmore.edu}{\texttt{msantetti@skidmore.edu}} \\
 	\textbf{Office hours:} & \, \faHourglassHalf \, Mondays 12:30--2:00 PM & \, \faUniversity \, Filene 222 \\
 	& \, \faHourglassHalf \, Fridays 2:30--4:00 PM$^*$ & \,  \\
-	\textbf{Web:} & \, \faPencil \, \href{https://github.com/marciosantetti/ec235-fall23/blob/main/README.md}{\texttt{Course website}} \\
+	\textbf{Web:} & \, \faPencil \, \href{https://github.com/marciosantetti/ec339-fall23/blob/main/README.md}{\texttt{Course website}} \\
 \end{tabular}
 
 $^*$ _Except on Department/Faculty meeting days._
