@@ -1,7 +1,7 @@
 # EC 339: Applied Econometrics, Fall 2023
 
-Welcome to EC 339--0001: **Applied Econometrics**!<br>
-*Fall 2023 - Marcio Santetti - [Economics Department](https://www.skidmore.edu/economics/), [Skidmore College](https://www.skidmore.edu/)*
+Welcome to EC 339&mdash;001: **Applied Econometrics**!<br>
+*Fall 2023 - Dr. Marcio Santetti - [Economics Department](https://www.skidmore.edu/economics/), [Skidmore College](https://www.skidmore.edu/)*
 
 
 ## Course Syllabus
