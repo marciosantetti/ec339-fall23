@@ -207,17 +207,17 @@ In all academic work, the ideas and contributions of others must be appropriatel
 
 * **Week 7**: Violations of CLRM Assumptions I: Omitted Variables Bias (OVB).
 
-* **Week 8**: Spring Vacation.
+* **Week 8**: Midterm Exam.
 
-* **Week 9**: Midterm Exam.
+* **Week 9**: Violations of CLRM Assumptions II: Multicollinearity.
 
-* **Week 10**: Violations of CLRM Assumptions II: Multicollinearity.
+* **Week 10**: Violations of CLRM Assumptions III: Serial Correlation.
 
-* **Week 11**: Violations of CLRM Assumptions III: Serial Correlation.
+* **Week 11**: Violations of CLRM Assumptions IV: Heteroskedasticity.
 
-* **Week 12**: Violations of CLRM Assumptions IV: Heteroskedasticity.
+* **Week 12**: Binary Dependent Variable Models.
 
-* **Week 13**: Binary Dependent Variable Models.
+* **Week 13**: Open for content adjustments.
 
 * **Week 14**: Course Wrap-up and Review.
 
