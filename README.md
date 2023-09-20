@@ -42,7 +42,7 @@ Handout files created using [Quarto](https://quarto.org/).
 
 **Week 4: The Classical Linear Regression Model (CLRM)**
 
-  - HAndout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/003-clrm/classical-model.pdf)
+  - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/003-clrm/classical-model.pdf)
 
 ## Assignments
 
@@ -50,7 +50,7 @@ Handout files created using [Quarto](https://quarto.org/).
 ### Problem Sets
 
 
-  - [`Problem Set 1`]()
+  - [`Problem Set 1`](https://raw.githack.com/marciosantetti/ec339-fall23/main/problem-sets/ps1-ec339-fall23.pdf) (due 10/04, before class)
 
 
 ### Quizzes
