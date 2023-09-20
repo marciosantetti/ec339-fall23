@@ -37,6 +37,12 @@ Handout files created using [Quarto](https://quarto.org/).
 
   - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/002-multiple-regression/multiple-regression.pdf)
   - Video lecture: [`part 1`](https://youtu.be/0Gucy69eAKA) | [`part 2`](https://youtu.be/DW9NmsI-xG8)
+  - Stata do-file: [`002-multiple-regression.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/002-multiple-regression/002-multiple-regression.do) | To download, see `theSpring` module
+  -  Data files available for download on `theSpring`.
+
+**Week 4: The Classical Linear Regression Model (CLRM)**
+
+  - HAndout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/003-clrm/classical-model.pdf)
 
 ## Assignments
 
@@ -44,7 +50,7 @@ Handout files created using [Quarto](https://quarto.org/).
 ### Problem Sets
 
 
-  - `Problem Set 1` (coming soon)
+  - [`Problem Set 1`]()
 
 
 ### Quizzes
