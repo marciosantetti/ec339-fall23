@@ -37,6 +37,7 @@ Handout files created using [Quarto](https://quarto.org/).
 
   - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/002-multiple-regression/multiple-regression.pdf)
   - Video lecture: [`part 1`](https://youtu.be/0Gucy69eAKA) | [`part 2`](https://youtu.be/DW9NmsI-xG8)
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/002-multiple-regression/002-multiple-regression.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/002-multiple-regression/002-multiple-regression.pdf)
   - Stata do-file: [`002-multiple-regression.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/002-multiple-regression/002-multiple-regression.do) | To download, see `theSpring` module
   -  Data files available for download on `theSpring`.
 
