@@ -55,11 +55,13 @@ Handout files created using [Quarto](https://quarto.org/).
   - [`Problem Set 1`](https://raw.githack.com/marciosantetti/ec339-fall23/main/problem-sets/ps1-ec339-fall23.pdf) (due 10/04, before class)
 
 
+<br>
+
 ### Quizzes
 
 All quizzes will be posted on `theSpring`.
 
-
+<br>
 
 ### Applied Research Project
 
