@@ -13,27 +13,27 @@
 *------------------------------------------------------*
 
 
-* Whenever using Stata, your first step should always be
-* setting your working directory (that is, where your data files)
-* will come from, and where you will save your work.
+/* Whenever using Stata, your first step should always be
+setting your working directory (that is, where your data files)
+will come from, and where you will save your work.
 
-* In the top left corner, simply go to "File" > "Change Working Directory" > and choose
-* your desired folder. Your data files should be there as well,
-* so Stata can find and import it.
+In the top left corner, simply go to "File" > "Change Working Directory" > and choose
+your desired folder. Your data files should be there as well,
+so Stata can find and import it.*/
 
 
 **------------------------------------------------------------------------
 
 
 
-** Assumption 1: the model is linear in parameters, well-specified, 
-** and contains an additive error term.
+/** Assumption 1: the model is linear in parameters, well-specified, 
+** and contains an additive error term.*/
 
 
 
-* Stata (and any other statistical software already takes care of the first and
-* third points of this assumption. The hard part, however, is having
-* a wel-specified model).
+/* Stata (and any other statistical software already takes care of the first and
+third points of this assumption. The hard part, however, is having
+a wel-specified model).*/
 
 use chicken_demand
 
@@ -134,8 +134,8 @@ twoway (scatter resid_food income), yline(0)
 **------------------------------------------------------------------------
 
 
-**--- Assumption 6: No explanatory variable is a perfect linear function
-** of any other explanatory variable (no multicollinearity assumption).
+/**--- Assumption 6: No explanatory variable is a perfect linear function
+of any other explanatory variable (no multicollinearity assumption).*/
 
 
 clear
@@ -158,13 +158,16 @@ correlate p y pb
 **--- Assumption 7: the error term is normally distributed.
 
 
-** The Shapiro-Wilk test for normality is a common statistical test that we can
-** apply for testing CLRM Assumption 7:
+/** The Shapiro-Wilk test for normality is a common statistical test that we can
+** apply for testing CLRM Assumption 7:*/
+
+/* However, normality tests should not be taken too seriously to infer whether 
+a random variable is normally distributed.*/
 
 
 
-* H0: the random variable is normally distributed;
-* Ha: H0 is not true.
+/* H0: the random variable is normally distributed;
+ * Ha: H0 is not true.*/
 
 
 swilk resid_chicken
