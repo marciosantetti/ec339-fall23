@@ -48,6 +48,11 @@ Handout files created using [Quarto](https://quarto.org/).
   - Stata do-file: [`003-clrm.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/003-clrm/003-clrm.do) | To download, see `theSpring` module
   -  Data files available for download on `theSpring`.
 
+
+**Week 5: Linear Regression: Inference**
+
+  - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/004-inference/inference.pdf)
+
 ## Assignments
 
 
