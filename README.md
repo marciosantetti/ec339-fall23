@@ -45,6 +45,8 @@ Handout files created using [Quarto](https://quarto.org/).
 
   - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/003-clrm/classical-model.pdf)
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/003-clrm/003-clrm%202.html#1) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/003-clrm/003-clrm.pdf)
+  - Stata do-file: [`003-clrm.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/003-clrm/003-clrm.do) | To download, see `theSpring` module
+  -  Data files available for download on `theSpring`.
 
 ## Assignments
 
