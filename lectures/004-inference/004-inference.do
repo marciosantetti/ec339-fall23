@@ -13,21 +13,21 @@
 *------------------------------------------------------*
 
 
-* Whenever using Stata, your first step should always be
-* setting your working directory (that is, where your data files)
-* will come from, and where you will save your work.
+/* Whenever using Stata, your first step should always be
+setting your working directory (that is, where your data files)
+will come from, and where you will save your work.
 
-* In the top left corner, simply go to "File" > "Change Working Directory" > and choose
-* your desired folder. Your data files should be there as well,
-* so Stata can find and import it.
+In the top left corner, simply go to "File" > "Change Working Directory" > and choose
+your desired folder. Your data files should be there as well,
+so Stata can find and import it.*/
 
 
 **------------------------------------------------------------------------
 
 
-* Today, we will use the "sleep75.dta" file (available on theSpring).
-* Source: J.E. Biddle and D.S. Hamermesh (1990), "Sleep and the Allocation of Time," 
-* Journal of Political Economy 98, 922-943.
+/* Today, we will use the "sleep75.dta" file (available on theSpring).
+Source: J.E. Biddle and D.S. Hamermesh (1990), "Sleep and the Allocation of Time," 
+Journal of Political Economy 98, 922-943.*/
 
 clear
 
@@ -62,15 +62,15 @@ reg sleep totwrk age yrsmarr
 
 
 
-* We can use the _b[variable name] and _se[variable name] keys to 
-* extract the beta coefficient and standarrd error, respectively:
+/* We can use the _b[variable name] and _se[variable name] keys to 
+extract the beta coefficient and standarrd error, respectively:*/
 
 
 display _b[totwrk]  / _se[totwrk] 
 
 
-* After computing the t-test statistic, we look for the t-distribution's critical values.
-* the "invttail" function does that for us, so there is no need to use tables.
+/* After computing the t-test statistic, we look for the t-distribution's critical values.
+the "invttail" function does that for us, so there is no need to use tables.*/
 
 
 * For the upper tail value, using alpha/2 (in this case, 5%):
@@ -105,17 +105,17 @@ display invttail(706 - 3 - 1, 1 - 0.05/2)
 
 ** p-values:
 
-** A p-value can be used instead of a test statistic. It shows how likely we are to get a
-** test statistic as extreme as the one we've obtained from our test.
+/* A p-value can be used instead of a test statistic. It shows how likely we are to get a
+test statistic as extreme as the one we've obtained from our test.*/
 
 
-** Taking the example from the previous regression, the t-statistic for "age"
-** was 1.86, with a p-value of 0.064.
+/* Taking the example from the previous regression, the t-statistic for "age"
+was 1.86, with a p-value of 0.064.*/
 
 ** Where does this p-value come from?
 
-** For a two-tailed test, the p-value is given by:
-** 2 * P(t > |t-statistic|)
+/* For a two-tailed test, the p-value is given by:
+2 * P(t > |t-statistic|)*/
 
 
 display 2 * ttail(702, 1.86) 
@@ -129,9 +129,9 @@ display 2 * ttail(702, 1.86)
 
 
 
-** Bonus: function for plotting density curves and critical values in Stata.
-** Notice that the three slashes "///" serve as a line break, but
-** the code will continue on the next line.
+/* Bonus: function for plotting density curves and critical values in Stata.
+Notice that the three slashes "///" serve as a line break, but
+the code will continue on the next line.*/
 
 
 twoway (function y=tden(402,x), range(-3 3)) ///
@@ -179,12 +179,12 @@ reg sleep totwrk age yrsmarr, level(90)
 ** F-test (tesling linear restrictions):
 
 
-** Stata regression output also reports an F-test statistic and a p-value.
-** It is basically testing whether all slope coefficients are 
-** jointly significant.
+/* Stata regression output also reports an F-test statistic and a p-value.
+It is basically testing whether all slope coefficients are 
+jointly significant.*/
 
-* H0: beta_totwrk = beta_age = beta_yrsmarr = 0
-* Ha: the null hypothesis is not true.
+/* H0: beta_totwrk = beta_age = beta_yrsmarr = 0
+   Ha: the null hypothesis is not true.*/
 
 ** How do we interpret that result?
 
@@ -209,8 +209,8 @@ reg sleep totwrk age yrsmarr
 
 ** Suppose that, from our sleep model, we would like to test the following hypotheses:
 
-* H0: beta_totwrk = beta_age = 0
-* Ha: the null hypothesis is not true. 
+/* H0: beta_totwrk = beta_age = 0
+   Ha: the null hypothesis is not true. */
 
 
 test totwrk age
@@ -245,5 +245,5 @@ display (0.1089 -  0.0041 ) / ( 1 - 0.1089 ) * (702 / 2)
 **--- Practice:
 
 
-** Go back to the models we estimated in previous applied lectures. 
-** You should now be able to fully interpret all regression summaries.
+/* Go back to the models we estimated in previous applied lectures. 
+You should now be able to fully interpret all regression summaries.*/
