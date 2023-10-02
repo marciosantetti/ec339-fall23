@@ -52,6 +52,7 @@ Handout files created using [Quarto](https://quarto.org/).
 **Week 5: Linear Regression: Inference**
 
   - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/004-inference/inference.pdf)
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/004-inference/004-inference.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/004-inference/004-inference.pdf)
 
 ## Assignments
 
