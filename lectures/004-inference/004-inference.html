@@ -71,6 +71,127 @@ And .hi[using samples] is the best we can do.
 
 
 ---
+layout: false
+class: inverse, middle
+
+
+# Sampling distributions
+
+
+
+---
+
+# Sampling distributions
+
+Suppose we have a .hi[population] consisting of *N = 2,930* observations, and we are interested in one variable called *X*.
+
+--
+
+Its population mean (*&amp;mu;*) is 10,148.
+
+--
+
+&lt;br&gt;
+
+Now suppose we select a .hi[random sample] of size *n = 50* from this population.
+
+--
+
+Estimating the *mean* of this sample gives us `\(\bar{x} =\)` 10,761.78.
+
+
+---
+
+# Sampling distributions
+
+Then, we select another random *sample* of size *n = 50*.
+
+--
+
+Its mean is `\(\bar{x} =\)` 12,611.9.
+
+--
+
+&lt;br&gt;
+
+A third random sample of size *n = 50* gives a sample mean of `\(\bar{x} =\)` 9,058.66.
+
+--
+
+&lt;br&gt;&lt;br&gt;
+
+What if we do this procedure *5,000* times?
+
+---
+
+# Sampling distributions
+
+&lt;img src="004-inference_files/figure-html/unnamed-chunk-2-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# Sampling distributions
+
+Now, suppose we increase the sample size to *n = 500*.
+
+--
+
+&lt;br&gt;&lt;br&gt;
+
+Once again, we repeat the procedure *5,000* times.
+
+---
+
+
+# Sampling distributions
+
+&lt;img src="004-inference_files/figure-html/unnamed-chunk-3-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+# Sampling distributions
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+Next, we use samples of size *n = 1,500*.
+
+
+---
+
+# Sampling distributions
+
+&lt;img src="004-inference_files/figure-html/unnamed-chunk-4-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+
+# Sampling distributions
+
+Standardizing the variable:
+
+
+&lt;img src="004-inference_files/figure-html/unnamed-chunk-5-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# Sampling distributions
+
+
+&lt;img src="004-inference_files/figure-html/unnamed-chunk-6-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Sampling distributions
+
+
+&lt;img src="004-inference_files/figure-html/unnamed-chunk-7-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+
+---
 
 layout: false
 class: inverse, middle
@@ -256,7 +377,7 @@ $$
 
 # Confidence intervals - An example
 
-&lt;img src="004-inference_files/figure-html/unnamed-chunk-4-1.svg" style="display: block; margin: auto;" /&gt;
+&lt;img src="004-inference_files/figure-html/unnamed-chunk-10-1.svg" style="display: block; margin: auto;" /&gt;
 
 With .hi-orange[repeated sampling] from the population, 95% of our intervals will contain the population parameter _.hi[somewhere in this [0.17, 0.28] interval]_.
 
@@ -266,7 +387,7 @@ With .hi-orange[repeated sampling] from the population, 95% of our intervals wil
 
 # Confidence intervals - An example
 
-&lt;img src="004-inference_files/figure-html/unnamed-chunk-5-1.svg" style="display: block; margin: auto;" /&gt;
+&lt;img src="004-inference_files/figure-html/unnamed-chunk-11-1.svg" style="display: block; margin: auto;" /&gt;
 
 - If we estimate a 99% confidence interval, we have:
 
@@ -360,7 +481,7 @@ What are we supposed to do with these test statistics?
 - t.sub[critical value] = t.sub[.05/2, 931] = `1.962515`
 ]
 
-&lt;img src="004-inference_files/figure-html/unnamed-chunk-6-1.svg" style="display: block; margin: auto;" /&gt;
+&lt;img src="004-inference_files/figure-html/unnamed-chunk-12-1.svg" style="display: block; margin: auto;" /&gt;
 
 
 ---
