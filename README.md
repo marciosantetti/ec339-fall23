@@ -46,13 +46,21 @@ Handout files created using [Quarto](https://quarto.org/).
   - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/003-clrm/classical-model.pdf)
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/003-clrm/003-clrm%202.html#1) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/003-clrm/003-clrm.pdf)
   - Stata do-file: [`003-clrm.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/003-clrm/003-clrm.do) | To download, see `theSpring` module
-  -  Data files available for download on `theSpring`.
+  - Data files available for download on `theSpring`.
 
 
 **Week 5: Linear Regression: Inference**
 
   - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/004-inference/inference.pdf)
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/004-inference/004-inference.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/004-inference/004-inference.pdf)
+  - Stata do-file: [`004-inference.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/004-inference/004-inference.do) | To download, see `theSpring` module
+  - Data files available for download on `theSpring`.
+
+
+
+**Week 6: More on Functional Forms**
+
+  - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/005-functional-forms/more-functional-forms.pdf)
 
 ## Assignments
 
