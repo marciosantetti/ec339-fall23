@@ -61,6 +61,11 @@ Handout files created using [Quarto](https://quarto.org/).
 **Week 6: More on Functional Forms**
 
   - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/005-functional-forms/more-functional-forms.pdf)
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/005-functional-forms/005-functional-forms.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/005-functional-forms/005-functional-forms.pdf)
+  - Stata do-file: [`005-functional-forms.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/005-functional-forms/005-functional-forms.do) | To download, see `theSpring` module
+  - Data files available for download on `theSpring`.
+
+
 
 ## Assignments
 
@@ -69,6 +74,7 @@ Handout files created using [Quarto](https://quarto.org/).
 
 
   - [`Problem Set 1`](https://raw.githack.com/marciosantetti/ec339-fall23/main/problem-sets/ps1-ec339-fall23.pdf) (due 10/04, before class)
+  - [`Problem Set 2`]()
 
 
 <br>
