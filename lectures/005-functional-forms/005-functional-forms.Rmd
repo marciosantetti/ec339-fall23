@@ -789,6 +789,13 @@ $$
 
 ---
 
+# Intercept *dummy* variables
+
+<img src="reg1.png" style="width: 70%" />
+
+
+---
+
 
 # Slope *dummy* variables
 
@@ -887,10 +894,12 @@ $$
 $$
 
 
+---
+
+# Slope *dummy* variables
 
 
-
-
+<img src="reg2.png" style="width: 70%" />
 
 
 ---
