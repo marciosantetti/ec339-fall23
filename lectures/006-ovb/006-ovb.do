@@ -13,21 +13,21 @@
 *------------------------------------------------------*
 
 
-* Whenever using Stata, your first step should always be
-* setting your working directory (that is, where your data files)
-* will come from, and where you will save your work.
+/* Whenever using Stata, your first step should always be
+setting your working directory (that is, where your data files)
+will come from, and where you will save your work.
 
-* In the top left corner, simply go to "File" > "Change Working Directory" > and choose
-* your desired folder. Your data files should be there as well,
-* so Stata can find and import it.
+In the top left corner, simply go to "File" > "Change Working Directory" > and choose
+ your desired folder. Your data files should be there as well,
+so Stata can find and import it.*/
 
 
 **---------------------------------------------------------
 
 
-*-- In this applied lecture, we will practice what happens to OLS models when
-*-- we omit relevant or include irrelevant variables. Furthermore, we will
-*-- apply the RESET test for functional form misspecification.
+/*-- In this applied lecture, we will practice what happens to OLS models when
+ we omit relevant or include irrelevant variables. Furthermore, we will
+ apply the RESET test for functional form misspecification.*/
 
 
 **---------------------------------------------------------
@@ -44,9 +44,9 @@ use mroz_data
 
 
 
-** Let's estimate a model which we consider to be the "true" one, or
-** the best representing the population model for a household's
-** income.
+/* Let's estimate a model which we consider to be the "true" one, or
+ the best representing the population model for a household's
+ income.*/
 
 
 gen lfaminc = log(faminc)
@@ -83,8 +83,8 @@ twoway (scatter lfaminc hwage)
 ** Are the dependent variable and the omitted variable (hwage) closely related?
 
 
-**--- Now, let us check the correlation coefficients between the omitted variable
-** and both residual terms:
+/*--- Now, let us check the correlation coefficients between the omitted variable
+ and both residual terms:*/
 
 
 
@@ -101,23 +101,23 @@ correlate hwage resid_omit resid_true
 **--- Including irrelevant variables:
 
 
-** From what we have defined as the "true" model, let us now add a 
-** variable that may not have any theoretical value, the number
-** of husband siblings ('hsiblings'):
+/* From what we have defined as the "true" model, let us now add a 
+ variable that may not have any theoretical value, the number
+ of husband siblings ('hsiblings'):*/
 
 
 reg lfaminc educ wage heduc hwage kidsl6 hsiblings
 
 
 
-** Let us comparec these coefficients with the original regression's:
+** Let us compare these coefficients with the original regression's:
 
 
 reg lfaminc educ wage heduc hwage kidsl6
 
 
-**-- Moral of the story: if the addition of a variable is not supported by economic theory,
-** there should be a strong and reliable reason to include it in a final model.
+/*-- Moral of the story: if the addition of a variable is not supported by economic theory,
+** there should be a strong and reliable reason to include it in a final model.*/
 
 
 
@@ -127,8 +127,8 @@ reg lfaminc educ wage heduc hwage kidsl6
 **--- Ramsey's Regression Equation Specification Error Test (RESET):
 
 
-** Let us first run this test manually. First, we need the fitted values (y_hat) from
-** our model:
+/* Let us first run this test manually. First, we need the fitted values (y_hat) from
+ our model:*/
 
 
 
@@ -159,11 +159,11 @@ test y_hat_sq y_hat_cb y_hat_4
 
 
 
-** The null hypothesis for the RESET test is that the model is well specified. In case
-** we reject the null hypothesis that the added terms (squares, cubes, etc.) are not 
-** statistically significant (equal to zero), the model suffers from some kind of
-** misspecification. Unfortunately, it does not tell which specific misspecification
-** it is.
+/* The null hypothesis for the RESET test is that the model is well specified. In case
+ we reject the null hypothesis that the added terms (squares, cubes, etc.) are not 
+ statistically significant (equal to zero), the model suffers from some kind of
+ misspecification. Unfortunately, it does not tell which specific misspecification
+ it is.*/
 
 
 
