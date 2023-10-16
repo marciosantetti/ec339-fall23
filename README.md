@@ -64,6 +64,7 @@ Handout files created using [Quarto](https://quarto.org/).
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/005-functional-forms/005-functional-forms.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/005-functional-forms/005-functional-forms.pdf)
   - Stata do-file: [`005-functional-forms.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/005-functional-forms/005-functional-forms.do) | To download, see `theSpring` module
   - Data files available for download on `theSpring`.
+  - [`Complement on binary (dummy) variables`](https://youtu.be/KrBJoqyUhQ0)
 
 
 **Week 7: Violations of Classical Assumptions I: Omitted Variables Bias (OVB)**
