@@ -8,6 +8,11 @@ Welcome to EC 339&mdash;001: **Applied Econometrics**!<br>
 
 - [EC 339&mdash;001 Syllabus](https://raw.githack.com/marciosantetti/ec339-fall23/main/syllabus/ec339-syllabus-fall23.pdf)
 
+## Exam schedule
+
+  - **Midterm exam**: 11/08
+  - **Final exam**: 12/15 (9:00 AM&mdash;12:00 PM)
+
 
 ## Lecture notes/slides
 
