@@ -8,6 +8,11 @@ Welcome to EC 339&mdash;001: **Applied Econometrics**!<br>
 
 - [EC 339&mdash;001 Syllabus](https://raw.githack.com/marciosantetti/ec339-fall23/main/syllabus/ec339-syllabus-fall23.pdf)
 
+## Exam schedule
+
+  - **Midterm exam**: 11/08
+  - **Final exam**: 12/15 (9:00 AM&mdash;12:00 PM)
+
 
 ## Lecture notes/slides
 
@@ -64,11 +69,13 @@ Handout files created using [Quarto](https://quarto.org/).
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/005-functional-forms/005-functional-forms.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/005-functional-forms/005-functional-forms.pdf)
   - Stata do-file: [`005-functional-forms.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/005-functional-forms/005-functional-forms.do) | To download, see `theSpring` module
   - Data files available for download on `theSpring`.
+  - [`Complement on binary (dummy) variables`](https://youtu.be/KrBJoqyUhQ0)
 
 
 **Week 7: Violations of Classical Assumptions I: Omitted Variables Bias (OVB)**
 
   - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/006-ovb/ovb.pdf)
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/006-ovb/006-ovb.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/006-ovb/006-ovb.pdf)
 
 ## Assignments
 
