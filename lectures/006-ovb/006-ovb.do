@@ -52,13 +52,34 @@ use mroz_data
 gen lfaminc = log(faminc)
 
 
-** We assumed the true model is:
+
+
+* Some visuals:
+
+twoway (scatter lfaminc hwage), name(p1)
+twoway (scatter lfaminc heduc), name(p2)
+twoway (scatter lfaminc educ), name(p3)
+twoway (scatter lfaminc wage), name(p4)
+twoway (scatter lfaminc kidsl6), name(p5)
+
+
+graph combine p1 p2 p3 p4 p5
+
+
+
+
+** We assume the true model to be:
 
 
 
 reg lfaminc educ wage heduc hwage kidsl6
 
 predict resid_true, residuals
+
+
+
+
+
 
 
 
@@ -75,23 +96,6 @@ predict resid_omit, residuals
 ** How do the estimated coefficients behave when omitting a variable?
 
 
-****--- Quick visual inspection:
-
-twoway (scatter lfaminc hwage)
-
-
-** Are the dependent variable and the omitted variable (hwage) closely related?
-
-
-/*--- Now, let us check the correlation coefficients between the omitted variable
- and both residual terms:*/
-
-
-
-correlate hwage resid_omit resid_true
-
-
-** What can we say?
 
 
 
@@ -137,7 +141,7 @@ reg lfaminc educ wage heduc hwage kidsl6
 predict y_hat
 
 
-** And we will use its square, cubed and fourh-powered functional forms:
+** And we will use its square, cubed and fourth-powered functional forms:
 
 
 gen y_hat_sq = y_hat^2
