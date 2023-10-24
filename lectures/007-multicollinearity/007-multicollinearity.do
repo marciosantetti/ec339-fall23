@@ -13,21 +13,23 @@
 *------------------------------------------------------*
 
 
-* Whenever using Stata, your first step should always be
-* setting your working directory (that is, where your data files)
-* will come from, and where you will save your work.
+/* Whenever using Stata, your first step should always be
+setting your working directory (that is, where your data files)
+will come from, and where you will save your work.
 
-* In the top left corner, simply go to "File" > "Change Working Directory" > and choose
-* your desired folder. Your data files should be there as well,
-* so Stata can find and import it.
+In the top left corner, simply go to "File" > "Change Working Directory" > and choose
+ your desired folder. Your data files should be there as well,
+so Stata can find and import it.*/
 
 
 **---------------------------------------------------------
 
 
-*-- We will a subset of the Penn World Tables (PWT 9.1).
-*-- Official page: https://www.rug.nl/ggdc/productivity/pwt/pwt-releases/pwt9.1?lang=en
-*-- Data description: https://www.rdocumentation.org/packages/pwt9/versions/9.1-0/topics/pwt9.1
+/*-- We will a subset of the Penn World Tables (PWT 9.1).
+Official page: https://www.rug.nl/ggdc/productivity/pwt/pwt-releases/pwt9.1?lang=en
+Data description: https://www.rdocumentation.org/packages/pwt9/versions/9.1-0/topics/pwt9.1*/
+
+
 
 
 **---------------------------------------------------------
@@ -68,8 +70,8 @@ twoway (scatter ck ccon)
 reg lrgdpna pop emp ck ccon
 
 
-**-- And let's calculate this model's Variance Inflation Factors (VIFs),
-**-- with the "vif" command right after the regression has been estimated:
+/* And let's calculate this model's Variance Inflation Factors (VIFs),
+with the "vif" command right after the regression has been estimated:*/
 
 
 vif
@@ -92,6 +94,8 @@ vif
 
 
 reg pop emp ck ccon
+
+
 
 ** And grab its R-squared coefficient.
 
