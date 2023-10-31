@@ -13,21 +13,21 @@
 *------------------------------------------------------*
 
 
-* Whenever using Stata, your first step should always be
+/* Whenever using Stata, your first step should always be
 * setting your working directory (that is, where your data files)
-* will come from, and where you will save your work.
+* will come from, and where you will save your work.*/
 
-* In the top left corner, simply go to "File" > "Change Working Directory" > and choose
+/* In the top left corner, simply go to "File" > "Change Working Directory" > and choose
 * your desired folder. Your data files should be there as well,
-* so Stata can find and import it.
+* so Stata can find and import it.*/
 
 
 **---------------------------------------------------------
 
-**--- Okun's law model:
+/**--- Okun's law model:
 
-** Let us reproduce the model we saw in class, exploring Okun's law for 
-** the Australian economy between 1978Q2 and 2016Q2.
+ Let us reproduce the model we saw in class, exploring Okun's law for 
+ the Australian economy between 1978Q2 and 2016Q2.*/
 
 
 **---------------------------------------------------------
@@ -35,14 +35,14 @@
 
 clear
 
-use okun
+use okun_aus
 
 
-** Notice that we are working now with time-series data (we are observing 
-** the behavior of one or more variables over time).
+/* Notice that we are working now with time-series data (we are observing 
+ the behavior of one or more variables over time).*/
 
-** whenever working with time-series data in Stata, we have
-** perform a few steps before using the data.
+/* Whenever working with time-series data in Stata, we have
+ perform a few steps before using the data.*/
 
 
 
@@ -52,15 +52,15 @@ use okun
 browse
 
 
-* Since these are quarterly data, a good idea is to generate a new column with
+/* Since these are quarterly data, a good idea is to generate a new column with
 * the date rows. 
 
-* For quarterly data, we use the "tq" function:
+ For quarterly data, we use the "tq" function:
 
-* Note that we put the starting year (1978), followed by the first available quarter (in our case, q2):
+ Note that we put the starting year (1978), followed by the first available quarter (in our case, q2):*/
 
 
-gen period = tq(1978q2) +_n-1
+gen period = tq(1978q2) + _n-1
 
 
 
@@ -80,15 +80,15 @@ format period %tq
 browse
 
 
-* The last step is to tell Stata that this new column is 
-* of a date class.
+/* The last step is to tell Stata that this new column is 
+ of a date class.*/
 
 
 tsset period
 
 
 
-* If we want, we can drop the "date" column.
+* If we want, we can drop the "date" column (it's of no use anymore).
 
 
 drop date
@@ -103,7 +103,7 @@ drop date
 **---------------------------------------------------------
 
 
-** For time-series data, we can use the "tsline" command:
+** For plotting time-series data, we can use the "tsline" command:
 
 
 twoway (tsline g)
@@ -112,32 +112,20 @@ twoway (tsline g)
 * Or with both series in the same plot:
 
 
-twoway (tsline g u)
+twoway (tsline g unemp_rate)
 
 
 **---------------------------------------------------------
 
 
 
-** For Okun's law, we need to create the change in unemoployment rate, du.
+/* For Okun's law, we will use the change in unemployment rate, delta_unemp_rate.
 
 
-** "du" is the difference between this period's unemployment rate (at time t)
-** and last period's unemployment rate (at time t-1).
-
-** Values of variables in previous periods are called "lagged" values,
-** and are easily computed in Stata by using the "L." function.
-
-** In Stata language:
+ "delta_unemp_rate" is the difference between this period's unemployment rate (at time t)
+ and last period's unemployment rate (at time t-1).*/
 
 
-gen lag_u = L1.u
-
-
-** And du is nothing but du = u - lag_u
-
-
-gen du = u - lag_u
 
 
 
@@ -147,7 +135,7 @@ gen du = u - lag_u
 **--- Okun's law regression model:
 
 
-reg du g
+reg delta_unemp_rate g
 
 
 
@@ -162,10 +150,10 @@ twoway (tsline epsilon)
 
 
 
-** From a visual perspective, it is not always straightforward to assess whether the error term is
-** autocorrelated or not.
+/* From a visual perspective, it is not always straightforward to assess whether the error term is
+autocorrelated or not.
 
-** Therefore, we need some statistical tests for a better inference.
+ Therefore, we need some statistical tests for a better inference.*/
 
 
 
@@ -179,23 +167,27 @@ twoway (tsline epsilon)
 
 
 
-** Durbin-Watson (DW) test:
+**- Durbin-Watson (DW) test:
 
-reg du g
+
+reg delta_unemp_rate g
 
 estat dwatson
+
 
 * The function gives us the "d" test statistic, which we compare with 
 * upper and lower values given by the Durbin-Watson table.
 
-* At 5% of significance, and a sample size of 152 and k = 1 slope coefficient, the table gives us lower and upper values of
-* 1.72 and 1.75, respectively.
+
+/* At 5% of significance, and a sample size of 152 and k = 1 slope coefficient, the table gives us lower and upper values of
+ 1.72 and 1.75, respectively.*/
+
 
 * So what is our decision?
 
 
 
-** Breusch-Godfrey (BG) test:
+**- Breusch-Godfrey (BG) test:
 
 
 
@@ -203,6 +195,7 @@ estat bgodfrey, lag(1) nomiss0
 
 
 ** To further explore the options above
+
 
 help estat bgodfrey
 
@@ -214,15 +207,19 @@ help estat bgodfrey
 
 
 
-**--- Now, where do these results come from?
+/*--- Now, where do these results come from?
 
 
-** First, for the DW test.
+ First, for the DW test.
+ 
+ 
 
-** Its test statistic can be approximated by 2*(1 - rho), 
-** where "rho" is the error term's autocorrelation coefficient.
+ Its test statistic can be approximated by 2*(1 - rho), 
+ where "rho" is the error term's autocorrelation coefficient.
+ 
+ 
 
-** So let's estimate "rho":
+ So let's estimate "rho":*/
 
 
 reg epsilon L1.epsilon, noconstant
@@ -246,24 +243,25 @@ display 2 * (1 - _b[L1.epsilon])
 
 
 
-**--- Now, to the Breusch-Godfrey test.
+/*--- Now, to the Breusch-Godfrey test.
 
 ** It requires a more comprehensive auxiliary regression for the regression's residuals,
-** also including the independent variable(s) from the original model. 
+** also including the independent variable(s) from the original model. */
 
 
 reg epsilon L1.epsilon g
 
 
-** Its test statistic is given by LM = (n - q)*R2, where R2 is the coefficient of determination
-** from this latter auxiliary regression. "n" is the sample size, and "q" is the
-** order of autocorrelation we are testing for.
+/* Its test statistic is given by LM = (n - q) * R2, where R2 is the coefficient of determination
+ from this latter auxiliary regression. "n" is the sample size, and "q" is the
+ order of autocorrelation we are testing for.*/
 
 
 ** So...
 
 
 display (152 - 1) * 0.1202
+
 
 ** Is this test statistic close to the one given by the "estat bgodfrey" function?
 
@@ -275,15 +273,15 @@ display (152 - 1) * 0.1202
 ** Dealing with serial correlation:
 
 
-** Given that we have serial correlation in our Okun's law model,
-** we cannot trust in its standard errors. Therefore, inference from this model is unreliable.
+/* Given that we have serial correlation in our Okun's law model,
+ we cannot trust in its standard errors. Therefore, inference from this model is unreliable.
 
 
-** As a solution for first-degree serial correlation, we can use the Cochrane-Orcutt (CO) estimator:
+ As a solution for first-degree serial correlation, we can use the Cochrane-Orcutt (CO) estimator:*/
 
 
 
-prais du g, corc
+prais delta_unemp_rate g, corc
 
 
 ** What do we conclude?
@@ -312,7 +310,7 @@ clear
 use macro_data
 
 
-** We are dealing with annual data, so we can use the "year" column as our time variables
+** We are dealing with annual data, so we can use the "year" column as our time variable:
 
 tsset year
 
@@ -322,8 +320,8 @@ tsset year
 
 *--
 
-** creating time series for the real interest
-** rate and the profit rate:
+/* creating time series for the real interest
+ rate and the profit rate:*/
 
 gen real_int_rate = ifedfunds - infrate
 
