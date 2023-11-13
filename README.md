@@ -97,6 +97,7 @@ Handout files created using [Quarto](https://quarto.org/).
 **Week 10: Violations of Classical Assumptions IV: Heteroskedasticity**
 
   - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/009-heteroskedasticity/heteroskedasticity.pdf)
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/009-heteroskedasticity/009-heteroskedasticity.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/009-heteroskedasticity/009-heteroskedasticity.pdf)
 
 
 ## Assignments
