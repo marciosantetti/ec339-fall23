@@ -13,20 +13,20 @@
 *------------------------------------------------------*
 
 
-* Whenever using Stata, your first step should always be
-* setting your working directory (that is, where your data files)
-* will come from, and where you will save your work.
+/* Whenever using Stata, your first step should always be
+ setting your working directory (that is, where your data files)
+ will come from, and where you will save your work.*/
 
-* In the top left corner, simply go to "File" > "Change Working Directory" > and choose
-* your desired folder. Your data files should be there as well,
-* so Stata can find and import it.
+/* In the top left corner, simply go to "File" > "Change Working Directory" > and choose
+ your desired folder. Your data files should be there as well,
+ so Stata can find and import it.*/
 
 
 **---------------------------------------------------------
 
 
-**--- As a first applied example, let us use a sample from the 2018 American Community Survey (ACS), 
-**--- downloaded from IPUMS (Integrated Public Use Microdata Series).
+/*--- As a first applied example, let us use a sample from the 2018 American Community Survey (ACS), 
+ downloaded from IPUMS (Integrated Public Use Microdata Series).*/
 
 
 clear
@@ -85,9 +85,9 @@ estat imtest, white
 **--- Manually estimating the Breusch-Pagan test:
 
 
-* First, we need to estimate an auxiliary regression, with the squared residual term as the
-* dependent variable, and the independent variables from the original model maintained on
-* this new model's right-hand-side.
+/* First, we need to estimate an auxiliary regression, with the squared residual term as the
+ dependent variable, and the independent variables from the original model maintained on
+ this new model's right-hand-side.*/
 
 
 gen u_sq = u^2
@@ -112,9 +112,9 @@ display 5000 * 0.0158
 **--- Manually estimating the White test:
 
 
-* The only difference in the White test's procedure is that we take into account model misspecification.
-* Therefore, similarly to the RESET test, we put the fitted values for the dependent variable
-* and potential functional forms that may be contributing to heteroskedasticity.
+/* The only difference in the White test's procedure is that we take into account model misspecification.
+ Therefore, similarly to the RESET test, we put the fitted values for the dependent variable
+ and potential functional forms that may be contributing to heteroskedasticity.*/
 
 
 * From the original regression:
@@ -160,68 +160,15 @@ display 5000 * 0.0249
 reg personal_income education i_female, robust
 
 
-**--------------------------------------------------------
-
-
-
-
-**--- Now, replicate the results from the last lecture's slides
-**--- for the housing price data (hprice2.dta file).
-
-
-
+* Now, inference from our model is reliable in the presence of heteroskedasticity.
 
 
 **--------------------------------------------------------
 
 
-** BONUS: Using the "estout" package to display regression output tables for publication:
 
 
-
-
-* First, we need to install the package (only need to do it once):
-
-
-ssc install estout, replace
-
-
-* Every time we run a regression model that we want to show in our table, 
-* we use "eststo: reg [variables here]"
-
-* example:
-
-
-eststo: reg personal_income education i_female
-
-
-** Then, to display the table, we say
-
-
-esttab
-
-* To replace t-statistics with standard errors and add the R2 measures:
-
-esttab, se r2 ar2 brackets
-
-
-* A second model:
-
-
-eststo: reg personal_income education i_female, robust
-
-
-esttab, se r2 ar2 brackets
-
-
-
-* Lastly, we can export teh table as soon as we are happy with it:
-
-
-esttab using example_heteroskedasticity.rtf 
-
-
-
-
+/*--- Now, replicate the results from the last lecture's slides
+for the housing price data (hprice2.dta file).*/
 
 
