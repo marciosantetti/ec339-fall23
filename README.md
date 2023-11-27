@@ -10,7 +10,7 @@ Welcome to EC 339&mdash;001: **Applied Econometrics**!<br>
 
 ## Exam schedule
 
-  - **Midterm exam**: 11/08
+  - ~~**Midterm exam**: 11/08~~
   - **Final exam**: 12/15 (9:00 AM&mdash;12:00 PM)
 
 
@@ -98,7 +98,13 @@ Handout files created using [Quarto](https://quarto.org/).
 
   - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/009-heteroskedasticity/heteroskedasticity.pdf)
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/009-heteroskedasticity/009-heteroskedasticity.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/009-heteroskedasticity/009-heteroskedasticity.pdf)
+  - Stata do-file: [`009-heteroskedasticity.do`](https://github.com/marciosantetti/ec339-fall23/blob/main/lectures/009-heteroskedasticity/009-heteroskedasticity.do) | To download, see `theSpring` module
+  - Data files available for download on `theSpring`.
 
+
+**Week 11: Binary dependent-variable models**
+
+  - Handout: [`pdf`](https://raw.githack.com/marciosantetti/ec339-fall23/main/lectures/010-binary-models/binary-models.pdf)
 
 ## Assignments
 
